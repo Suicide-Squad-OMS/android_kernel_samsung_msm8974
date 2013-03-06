@@ -528,6 +528,7 @@ int ieee80211_key_link(struct ieee80211_key *key,
 		__ieee80211_key_free(key);
 
  out:
+
 	mutex_unlock(&sdata->local->key_mtx);
 
 	return ret;
