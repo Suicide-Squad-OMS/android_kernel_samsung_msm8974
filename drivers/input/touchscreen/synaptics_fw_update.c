@@ -1707,6 +1707,7 @@ static ssize_t fwu_sysfs_store_image(struct file *data_file,
 				__func__);
 		retval = -EINVAL;
 		goto store_image_exit;
+		return -EINVAL;
 	}
 
 	memcpy((void *)(&fwu->ext_data_source[fwu->data_pos]),
